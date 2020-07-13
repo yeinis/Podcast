@@ -1,0 +1,63 @@
+nav {
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  label {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  #trickMenu {
+    display: none;
+    background: white;
+    padding: 10px 0;
+    background-color: blue;
+    position: absolute;
+    width: 100%;
+    top: 36px;
+
+    a {
+      display: block;
+      padding: 10px 0;
+      margin: 10px;
+      color: white;
+    }
+  }
+
+  #menu-toggle:checked + #trickMenu {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  nav {
+    label {
+      display: none;
+    }
+
+    .menu {
+      display: flex;
+
+      a {
+        padding-right: 16px;
+        :hover {
+          background-color: #00f0b8;
+        }
+      }
+    }
+  }
+}
+

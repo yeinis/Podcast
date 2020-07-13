@@ -1,0 +1,47 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 31px;
+  padding-top: 24px;
+
+  .derecho-autor {
+    padding-left: 47px;
+  }
+
+  .social {
+    padding-left: 45px;
+
+    a {
+      padding-right: 28px;
+      color: #312e2e;
+      :hover {
+         color:  #00F0B8;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 1322px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 36px;
+    padding-top: 31px;
+
+    .derecho-autor {
+      padding-left: 100px;
+    }
+
+    .social {
+      padding-right: 100px;
+
+      // a {
+      //   padding-right: 28px;
+      // }
+    }
+  }
+}

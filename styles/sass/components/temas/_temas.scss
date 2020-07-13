@@ -1,0 +1,41 @@
+.temas {
+  position: relative;
+  
+   h2 {
+    padding-left: 16px;
+  }
+  display: flex;
+  flex-direction: column;
+
+  .img-temas {
+    text-align: center;
+
+    img {
+      width: 104px;
+      height: 104px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .temas {
+    h2{
+      padding-left: 490px;
+    }
+    
+    .img-temas {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      img {
+        width: 104px;
+        height: 104px;
+      }
+
+      .temas-text {
+        width: 220px;
+      }
+    }
+  }
+}

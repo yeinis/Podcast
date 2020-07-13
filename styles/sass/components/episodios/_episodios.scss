@@ -1,0 +1,92 @@
+@import '../../utils/variables/variables';
+
+.episodios {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 196px;
+  background-image: linear-gradient(#0000a3, #0000ff);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    height: 100px;
+    width: 100%;
+    clip-path: polygon(100% 0, 0 100%, 0 0);
+    left: 0;
+    background: white;
+    z-index: 0;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    height: 100px;
+    width: 100%;
+    clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+    left: 0;
+    background: white;
+    z-index: 0;
+  }
+
+  .titulo {
+    padding-left: 16px;
+    padding-right: 16px;
+
+    h2 {
+      color: white;
+    }
+  }
+
+  .panel-spoty {
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 11px;
+
+    .col-12 {
+      box-sizing: border-box;
+      width: calc(8.3% * 12);
+    }
+
+    div iframe {
+      width: 298px;
+      height: 225px;
+      padding-top: 11px;
+    }
+  }
+}
+
+
+
+@media (min-width: 1322px) {
+  .episodios {
+
+    .titulo {
+      padding-left: 200px;
+      padding-right: 200px;
+    }
+
+    .container {
+      padding-left: 100px;
+
+      .col-md-6 {
+        box-sizing: border-box;
+        width: calc(8.3% * 6);
+      }
+
+      div {
+        padding-right: 72px;
+        iframe {
+          width: 584px;
+          height: 232px;
+        }
+      }
+    }
+  }
+}
